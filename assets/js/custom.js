@@ -292,7 +292,7 @@ function popup() {
 
 function swiper() {
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
