@@ -384,16 +384,16 @@ $(document).ready(function(){
 });
 
 
-$(window).load(function() {
+$(window).on('load', function() {
   $("#loader").fadeOut(500);
-  
+
   $('.kv-content').delay(0).queue(function() {$(this).addClass("animated fadeIn");});
   $('.kv-image').delay(350).queue(function() {$(this).addClass("animated fadeInUp");});
 
 });
 
 
-$(window).bind("load", function() {
+$(window).on("load", function() {
   
   // https://appelsiini.net/projects/lazyload/v1/
   
