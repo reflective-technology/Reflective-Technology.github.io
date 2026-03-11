@@ -341,12 +341,6 @@ $(document).ready(function(){
   swiper();
   // particles();
 
-  $("img[data-original]").show().lazyload({
-    threshold : 1000,
-    // effect : "fadeIn",
-    skip_invisible : true,
-    event : "sporty"
-  });
 
   var $window = $(window),
       $html = $('html');
@@ -393,15 +387,6 @@ $(window).on('load', function() {
 });
 
 
-$(window).on("load", function() {
-  
-  // https://appelsiini.net/projects/lazyload/v1/
-  
-  var timeout = setTimeout(function() {
-    $("img[data-original]").trigger("sporty")
-  }, 1500);
-
-});
 
 
 // https://stackoverflow.com/questions/3664381/force-page-scroll-position-to-top-at-page-refresh-in-html
